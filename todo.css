@@ -395,13 +395,13 @@ margin-top: 18px;
   text-decoration: none;
 }
 
-#ts {
+/* #ts {
   /* color: red; */
   /* color: #ee8208;
     padding: 7px;
     font-size: 20px;
     text-decoration: none; */
-}
+ */
 .tss {
   color: #ee8208;
   padding: 9px;
@@ -434,8 +434,8 @@ margin-top: 18px;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .block,
-  hr {
+  .block
+   {
     display: none;
   }
   .ii {
@@ -460,18 +460,14 @@ background-color: white;
   }
   .revert_2 {
     cursor: pointer;
-    /* font-size: 35px;
-    align-content: normal;
-    margin-bottom: 18px;
-    position: absolute;
-    margin-top: 111px;
-    margin-left: 96px; */
+    
     font-size: 30px;
     position: absolute;
     bottom: 10vh;
     margin: 10vh 10vw -7vh 22vw;
     border: 1px solid white;
 background-color: white;
+/* display: none; */
   }
 
   i {
@@ -483,8 +479,9 @@ background-color: white;
   hr {
     /* margin-right: -34px; */
     
-      margin-right: -32px;
-      margin-left: -31px;
+    margin-right: -29px;
+    margin-left: -16px;
+
   }
   .head {
     display: flex;
@@ -537,7 +534,7 @@ background-color: white;
     width: 68%;
     border-radius: 25px;
     box-shadow: 5px 5px 5px grey;
-    text-align: start;
+    text-align: center;
     padding: 19px 34px 40px 33px;
     margin-bottom: 2vh;
   }
@@ -592,7 +589,7 @@ background-color: white;
     z-index: 3;
     text-align: center;
     padding: 26px 35px 24 px 35px;
-    margin: -58vh 10vw 10vh 15vw;
+    margin: -8vh 10vw 10vh -22vw;
     /* height: 110px; */
     width: 48%;
     border: 2px red solid;
@@ -608,16 +605,17 @@ background-color: white;
     border-radius: 30px;
     
      padding: 3px 22px 3px 22px;
-margin: 14px 36px 10px 10px;
+     margin: 14px 17px 10px -83px;
   }
   #btn_close {
     cursor: pointer;
-    font-size: 20px;
+    font-size: 17px;
     background-color: rgb(243, 92, 5);
     color: white;
     border: 1px red;
     border-radius: 30px;
-    padding: 6px 28px 6px 28px;
+    padding: 4px 21px 6px 16px;
+margin-left: 10px;
   }
   
   #txt {
@@ -626,7 +624,7 @@ margin: 14px 36px 10px 10px;
     padding: 1px;
   }
   .sm {
-    margin-left: -25vw;
+    margin-left: -14vw;
     width: 749px;
     display: flex;
     flex-wrap: wrap;
@@ -637,6 +635,7 @@ margin: 14px 36px 10px 10px;
     font-size: 35px;
     padding-left: 12px;
     font-weight: 700;
+    margin: 0px 30px 0px -7px;
   }
   .hro {
     font-family: "Raleway", sans-serif;
@@ -701,13 +700,13 @@ margin: 14px 36px 10px 10px;
     text-decoration: none;
   }
 
-  #ts {
+  /* #ts {
     /* color: red; */
     /* color: #ee8208;
         padding: 7px;
         font-size: 20px;
         text-decoration: none; */
-  }
+   */
   .tss {
     color: #ee8208;
     padding: 6px 1px 16px 16px;
@@ -748,7 +747,7 @@ margin: 14px 36px 10px 10px;
     background-repeat: no-repeat;
     background-size: contain;
   }
-}
+
 
 
 /* js classes added */
@@ -760,3 +759,31 @@ margin: 14px 36px 10px 10px;
     filter: blur(30px);
     z-index: -1;
     }
+    .nolist0 {
+      font-size: 23px;
+      margin: 16px;
+      left: 20px;
+      position: absolute;
+      left: 30px;
+      font-family: "Raleway", sans-serif;
+      top: 159px;}
+
+    .redirect1{
+      
+      min-height: 90vh;
+      width: 85%;
+      position: absolute;
+      top: 0px;
+      left: 18%;
+    
+    }
+    .reverthh{
+      position: absolute;
+      top: 59%;
+      left: 61%;
+      z-index: 3;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+  }

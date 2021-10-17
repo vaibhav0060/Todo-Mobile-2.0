@@ -12,112 +12,73 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
- 
+
 </head>
 
-<body >
+<body>
   <div id="body">
-  <header>
-    <div class="head 1"><span class="task"> Tasks </span> <span class="font1"> Lists </span> </div>
-    <div class="head2"> <button class="ii" id="add"><i class="fas fa-plus-circle"></i> </button>
-      <p class="block"> Add List </p>
-    </div>
-  </header>
-  <div class="main" id="main">
-    <p class="nolist0" id="nolist">No Items in the todo list</p>
-    <!-- <div class="bg-image">
-       <img src="./bg.png" alt="error"> -->
-  <!-- </div> --> 
-
-  <!-- <div class="pop001 " id="pop">Add New List <br>
-      <br>
-      <input type="text" id="txt">
-      <br>
-      <br>
-      
-      <input type="button" value="ADD" id="btn">
-
-  </div> -->
-    <!-- <div class="name"><a href="./index2.html" id="t">Trip To Paris</a>
-      <hr>
-      <br>
-      <div class="block">
-        <span class="del" id> Completed Task </span> <br> 
-        <br>
-        <span class="check"><input type="checkbox" name="check">Pending Task </span>
+    <header>
+      <div class="head 1"><span class="task"> Tasks </span> <span class="font1"> Lists </span> </div>
+      <div class="head2"> <button class="ii" id="add"><i class="fas fa-plus-circle"></i> </button>
+        <p class="block"> Add List </p>
       </div>
-    </div> -->
-    <!-- <div class="name"> <span class="t">my todo list</span>
-      <hr>
-      <br>
-      <div class="block">
-        <span class="del"><del> Completed Task </del> </span> <br>
-        <br>
-        <span class="check"><input type="checkbox" name="check">Pending Task </span>
-      </div>
-    </div>
-    <div class="name"><span class="t">my todo list</span>
-      <hr>
-      <br>
-      <div class="block">
-        <span class="del"><del> Completed Task </del> </span> <br>
-        <br>
-        <span class="check"><input type="checkbox">Pending Task </span>
-      </div> -->
-      
+    </header>
+    <div class="main" id="main">
+      <p class="nolist0" id="nolist">No Items in the todo list</p>
+
     </div>
   </div>
 
   <footer>
     <div class="foot"></div>
   </footer>
-</div>
-<div class="pop001 " id="pop">Add New List <br>
-  <br>
-  <input type="text" id="text" name="text" value="">
-  <br>
-  <br>
-  
-  <input type="button" value="ADD" id="btn">
-  <input type="button" value="CLOSE" id="btn_close" onclick="close_button()">
-
-</div>
-<div class="pop001 " id="pop_item">Add New Item <br>
-  <br>
-  <input type="text" id="text_item" name="text_item" value="">
-  <br>
-  <br>
-  
-  <input type="button" value="ADD" id="btn_add" onclick="add_text(this)">
-  <input type="button" value="CLOSE" id="btn_close2" onclick="close_button()">
-
-</div>
-
-
-<div class="redirect" id="redirect">
-  <div class="sm">
-    <div class="hro">
-      <hr>
-    </div>
-    <div class="hm" id="hm">Trip to Paris</div>
-    <div class="hrt">
-      <hr>
-    </div>
   </div>
-  <div class="back">  <span class="arrow" onclick="back_to_main()"><i class="fas fa-arrow-circle-left"></i> </span> 
-    <p class="block"> Back </p>
+  <div class="pop001 " id="pop">Add New List <br>
+    <br>
+    <input type="text" id="text" name="text" value="">
+    <br>
+    <br>
+
+    <input type="button" value="ADD" id="btn">
+    <input type="button" value="CLOSE" id="btn_close" onclick="close_button()">
+
   </div>
-  <div class="cm" id="cm"> <span class="tss">Trip To Paris</span>
-    <!-- <hr>
+  <div class="pop001 " id="pop_item">Add New Item <br>
+    <br>
+    <input type="text" id="text_item" name="text_item" value="">
+    <br>
+    <br>
+
+    <input type="button" value="ADD" id="btn_add" onclick="add_text(this)">
+    <input type="button" value="CLOSE" id="btn_close2" onclick="close_button()">
+
+  </div>
+
+
+  <div class="redirect" id="redirect">
+    <div class="sm">
+      <div class="hro">
+        <hr>
+      </div>
+      <div class="hm" id="hm">Trip to Paris</div>
+      <div class="hrt">
+        <hr>
+      </div>
+    </div>
+    <div class="back"> <span class="arrow" onclick="back_to_main()"><i class="fas fa-arrow-circle-left"></i> </span>
+      <p class="block"> Back </p>
+    </div>
+    <div class="cm" id="cm"> <span class="tss">Trip To Paris</span>
+      <!-- <hr>
     <br>
     <span class="dels"> Completed Task </span> <br>
     <br>
     <span class="checks"><input type="checkbox" name="check">Pending Task </span>
     <br><br><a href="./index3.html"><span class="revert"><i class="fas fa-plus-circle "></i></span> </a> -->
+    </div>
+    <span class="reverthh" id="reverthh"><i class="fas fa-plus-circle " onclick="back_to_main()"></i></span>
   </div>
-  <span class="reverthh" id="reverthh"><i class="fas fa-plus-circle " onclick="back_to_main()"></i></span>
-</div>
-<!-- <buttonv value="Mark Done" id="" >Mark Done</button> -->
+  <!-- <buttonv value="Mark Done" id="" >Mark Done</button> -->
   <script src="./script.js"></script>
 </body>
 
