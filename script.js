@@ -3,6 +3,7 @@ let add = document.getElementById("add");
 let pop = document.getElementById("pop");
 let body = document.getElementById("body");
 let mainBody = document.getElementsByTagName("body")[0];
+// let redirect = document.getElementById("redirect");
 // let nolist = document.querySelectorAll("#nolist");
 
 // function after click on add symbol
@@ -20,6 +21,32 @@ function addSymbol() {
 add.addEventListener("click", () => {
   addSymbol();
 });
+
+
+//////// redirect on next page  ///////
+function redirect(temp) {
+let redirect = document.getElementById("redirect");
+  body.classList.add("bodyjs1");
+  redirect.classList.add("redirect1");
+  redirect.classList.remove("redirect");
+
+///change title // // ///
+let title = document.getElementById("hm")
+title.innerHTML = temp.innerHTML;
+
+///// chanege cardd /////
+let card111 = document.getElementById("cm");
+card111.innerHTML = temp.parentNode.innerHTML
+
+}
+///////back to main page //////
+function back_to_main() {
+  let redirect = document.getElementById("redirect");
+  body.classList.remove("bodyjs1");
+  redirect.classList.remove("redirect1");
+  redirect.classList.add("redirect");
+}
+
 
 
 //////close button ///////
@@ -60,15 +87,18 @@ function createCard() {
     // card.setAttribute("id", element.id);
     card.id = element.id ;
       card.innerHTML = `
-        <p> ${element.value} </p>
+        <p onclick = "redirect(this)"> ${element.value} </p>
         <hr>
         <p  class="" id="${card.id}">  </p>
     
          <button class="revert" data-card-id ="${card.id}"  ><i class="fas fa-plus-circle"></i> </button>
          <button class="revert_2" id="remove_item" onclick = "delete1(this)" > <i class="fas fa-trash-alt"></i> </button>
-        `
+     `
   }
   main.appendChild(card);
+
+
+
 
 
 let add_item = document.querySelectorAll(".revert");
