@@ -5,34 +5,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo app</title>
+  <title>Todo app js</title>
   <script src="https://kit.fontawesome.com/d98d828d20.js" crossorigin="anonymous"></script>
   <link rel="icon" href="./icon.png">
   <link rel="stylesheet" href="./todo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-
+ 
 </head>
 
-<body>
+<body >
+  <div id="body">
   <header>
     <div class="head 1"><span class="task"> Tasks </span> <span class="font1"> Lists </span> </div>
-    <div class="head2"> <span class="ii"><a href="./index1.html"><i class="fas fa-plus-circle"></i> </a></span> 
+    <div class="head2"> <button class="ii" id="add"><i class="fas fa-plus-circle"></i> </button>
       <p class="block"> Add List </p>
     </div>
   </header>
-  <div class="main">
-    <div class="name"><a href="./index2.html" id="t">Trip To Paris</a>
+  <div class="main" id="main">
+    <!-- <div class="bg-image">
+       <img src="./bg.png" alt="error"> -->
+  <!-- </div> --> 
+
+  <!-- <div class="pop001 " id="pop">Add New List <br>
+      <br>
+      <input type="text" id="txt">
+      <br>
+      <br>
+      
+      <input type="button" value="ADD" id="btn">
+
+  </div> -->
+    <!-- <div class="name"><a href="./index2.html" id="t">Trip To Paris</a>
       <hr>
       <br>
       <div class="block">
-        <span class="del"> Completed Task </span> <br>
+        <span class="del" id> Completed Task </span> <br> 
         <br>
         <span class="check"><input type="checkbox" name="check">Pending Task </span>
       </div>
-    </div>
-    <div class="name"> <span class="t">my todo list</span>
+    </div> -->
+    <!-- <div class="name"> <span class="t">my todo list</span>
       <hr>
       <br>
       <div class="block">
@@ -48,13 +62,46 @@
         <span class="del"><del> Completed Task </del> </span> <br>
         <br>
         <span class="check"><input type="checkbox">Pending Task </span>
-      </div>
+      </div> -->
+      
     </div>
   </div>
 
   <footer>
     <div class="foot"></div>
   </footer>
+</div>
+<div class="pop001 " id="pop">Add New List <br>
+  <br>
+  <input type="text" id="text" name="text" value="">
+  <br>
+  <br>
+  
+  <input type="button" value="ADD" id="btn">
+  <input type="button" value="CLOSE" id="btn_close" onclick="close_button()">
+
+</div>
+<div class="pop001 " id="pop_item">Add New Item <br>
+  <br>
+  <input type="text" id="text_item" name="text_item" value="">
+  <br>
+  <br>
+  
+  <input type="button" value="ADD" id="btn_add" onclick="add_text(this)">
+  <input type="button" value="CLOSE" id="btn_close2" onclick="close_button()">
+
+</div>
+
+<!-- <buttonv value="Mark Done" id="" >Mark Done</button> -->
+  <script src="./script.js"></script>
 </body>
 
 </html>
+<!-- <span class="del" id="${element.id}">  </span> -->
+
+<!-- cursor: pointer;
+background-color: violet;
+font-size: 11px;
+padding: 4px 10px;
+border: 1px solid black;
+border-radius: 20px; -->
