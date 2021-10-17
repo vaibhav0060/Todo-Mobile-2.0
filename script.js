@@ -39,6 +39,8 @@ let card111 = document.getElementById("cm");
 card111.innerHTML = temp.parentNode.innerHTML
 
 }
+
+
 ///////back to main page //////
 function back_to_main() {
   let redirect = document.getElementById("redirect");
@@ -91,7 +93,7 @@ function createCard() {
         <hr>
         <p  class="" id="${card.id}">  </p>
     
-         <button class="revert" data-card-id ="${card.id}"  ><i class="fas fa-plus-circle"></i> </button>
+         <button class="revert" data-card-id ="${card.id}"><i class="fas fa-plus-circle"></i> </button>
          <button class="revert_2" id="remove_item" onclick = "delete1(this)" > <i class="fas fa-trash-alt"></i> </button>
      `
   }
@@ -100,14 +102,14 @@ function createCard() {
 
 
 
-
+// function addddd(){
 let add_item = document.querySelectorAll(".revert");
 console.log();
   add_item.forEach(e => {
       console.log(e);
       // console.log(e.target.dataset);
       e.addEventListener("click" , (e) => {
-        // console.log(e.target.dataset);
+        // ///console.log(e.target.dataset///////////////// 
         let pop_item = document.getElementById("pop_item");
         body.classList.add("bodyjs");
         pop_item.classList.remove("pop001");
@@ -121,11 +123,15 @@ console.log();
       })
     })
 }
-
+// }
 ///////remove card //////////
 function delete1(para) {
   console.log(para);
   para.parentNode.remove();
+let extra_plus = document.getElementById("reverthh");
+extra_plus.classList.remove("reverthh");
+extra_plus.classList.add("redirect");
+
 }
 
 ////// text add in card ////////
