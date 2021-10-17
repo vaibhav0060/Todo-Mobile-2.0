@@ -3,11 +3,18 @@ let add = document.getElementById("add");
 let pop = document.getElementById("pop");
 let body = document.getElementById("body");
 let mainBody = document.getElementsByTagName("body")[0];
+// let nolist = document.querySelectorAll("#nolist");
+
 // function after click on add symbol
 function addSymbol() {
     body.classList.add("bodyjs");
-    pop.classList.remove("pop001")
-    pop.classList.add("pop")
+    pop.classList.remove("pop001");
+    pop.classList.add("pop");
+
+    let nolist =document.getElementById("nolist");
+
+    nolist.classList.remove("nolist0");
+    nolist.classList.add("nolist1");
 }
 
 add.addEventListener("click", () => {
@@ -115,6 +122,8 @@ function markCompleted(temp) {
   temp.classList.add("markdonee1");
   temp.parentNode.classList.add("del");
 }
+;
+
 
 
 

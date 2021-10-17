@@ -12,6 +12,18 @@ body {
   height: 1000px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.nolist0{
+  font-size: 32px;
+margin: 16px;
+left: 20px;
+position: absolute;
+left: 286px;
+font-family: "Raleway", sans-serif;
+top: 179px;
+}
+.nolist1{
+  display: none;
+}
 .parismob {
   background-image: url(./paris.png);
   filter: blur(4px);
