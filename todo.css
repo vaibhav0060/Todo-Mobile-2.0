@@ -18,8 +18,13 @@ body {
 }
 .reverthh{
   position: absolute;
-top: 555px;
-left: 786px;
+  /* for mozila  */
+/* top: 555px;
+left: 786px; */  
+
+/* for chrome  */
+top: 553px;
+left: 784px;
 z-index: 3;
 font-size: 28px;
 cursor: pointer;
