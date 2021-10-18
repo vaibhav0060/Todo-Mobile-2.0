@@ -111,6 +111,7 @@ console.log();
       e.addEventListener("click" , (e) => {
         // ///console.log(e.target.dataset///////////////// 
         let pop_item = document.getElementById("pop_item");
+let body = document.getElementById("body");
         body.classList.add("bodyjs");
         pop_item.classList.remove("pop001");
         pop_item.classList.add("pop");

@@ -7,6 +7,10 @@
 button{
   cursor: pointer;
 }
+.bodyjs {
+  filter: blur(8px);
+  z-index: -1;
+}
 body {
   /* background-color: orange; */
   height: 1000px;
@@ -779,7 +783,7 @@ margin-left: 10px;
     }
     .reverthh{
       position: absolute;
-      top: 59%;
+      top: 67%;
       left: 61%;
       z-index: 3;
       font-size: 28px;
